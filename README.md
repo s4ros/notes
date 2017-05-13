@@ -7,4 +7,4 @@ I hope you'll find it useful somehow.
 
 # List of contents
 
-- uefi_linux_windows.md - tips for Windows|Linux coexistence struggle ;)
+- [uefi_linux_windows.md] - tips for Windows|Linux coexistence struggle ;)
