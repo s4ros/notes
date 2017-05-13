@@ -3,7 +3,7 @@
 - check if BIOS(?) is set to **UEFI-only** boot! Very important! No legacy shit.
 - make some room for Ubuntu on the disk
 - prepare bootable USB with **GPT** partition table + **boot** flag! Very important!
-- you can create bootable USB from any bootable ISO image by:
+- you can create bootable USB from any bootable ISO image
 
 To check if you're on **UEFI-only** settings, please execute
 ```
@@ -28,7 +28,7 @@ where `/dev/sdc1` is a formatted FAT32 partition on the USB drive. And then just
 
 
 
-# Chroot into Linux from LiveCd
+# Chroot into Linux from LiveCD
 
 Rule is to mount `/dev`, `/proc`, `/sys` with binding option under the `/mnt`
 where your system is installed (the one you want to chroot into).
@@ -37,7 +37,7 @@ sudo mount -o bind /dev /mnt/dev
 sudo mount -o bind /proc /mnt/proc
 sudo mount -o bind /sys /mnt/sys
 ```
-
+and then you can `sudo chroot /mnt /bin/bash` (assuming you have your system mounted in `/mnt`).
 
 
 # Troubleshooting
@@ -52,8 +52,14 @@ Don't forget to execute `update-grub` after making changes in GRUB config.
 
 
 ## Black screen after successful installation
+When your Ubuntu installation is done and you can see the `ubuntu` entry in your
+UEFI boot menu, but after choosing it all you can see is a black screen
+(in my case cooling fans started working very hard), please boot your laptop
+using LiveCD and try to install `Boot-Repair` tool. It helped me.
+
 ```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo apt-get update
 sudo apt-get install -y boot-repair && boot-repair
 ```
+After launching, please follow the Recommended way.
