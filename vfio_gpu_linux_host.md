@@ -8,3 +8,4 @@ the GRUB_CMDLINE_LINUX line and within the quotes add either intel_iommu=on or a
 http://vfio.blogspot.com/2015/05/vfio-gpu-how-to-series-part-1-hardware.html
 https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF
 https://symless.com/synergy
+https://www.se7ensins.com/forums/threads/how-to-setup-a-gaming-virtual-machine-with-gpu-passthrough-qemu-kvm-libvirt-and-vfio.1371980/
