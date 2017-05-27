@@ -8,4 +8,4 @@ I hope you'll find it useful somehow.
 # List of contents
 
 - [tips for Windows|Linux coexistence struggle ;)](uefi_linux_windows.md)
-- [BASH scripting tips%tricks](linux_bash_tips.md)
+- [BASH scripting tips&tricks](linux_bash_tips.md)
